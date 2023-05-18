@@ -25,3 +25,26 @@ colnames(TEB) = c('Identificação', 'Estado Civil','Grau de Instrução', 'No. 
 'Salário','IdadeA', 'IdadeM', 'Região de Procedência')
 TEB
 table(V4)
+
+mean(V5)
+
+median(V5)
+
+sd(V5)
+
+var(V5)
+
+Salario1 = (V50.2) + V5
+Salario2 = V5 + 1.5
+Salario3 = V5 - 0.8
+Salario4 = V52
+Salario5 = V5/3
+
+mean(Salario1);mean(Salario2);mean(Salario3);mean(Salario4);mean(Salario5)
+
+median(Salario1);median(Salario2);median(Salario3);median(Salario4);median(Salario5)
+
+sd(Salario1);sd(Salario2);sd(Salario3);sd(Salario4);sd(Salario5)
+
+var(Salario1);var(Salario2);var(Salario3);var(Salario4);var(Salario5)
+

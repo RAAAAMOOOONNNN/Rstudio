@@ -1,3 +1,7 @@
+                ********************************************PARTE 1*****************************************************
+#1
+rm(list=ls())
+#2
 V1 = 1:36
 s = "solteiro"
 k = "casado"
@@ -20,26 +24,34 @@ p = "capital"
 o = "outra"
 V8 = c(i, p, p, o, o, i, i, p, p, o, i, p, o, o, i, o, p, o, i, i, o, p, o, o,
 i, o, o, i, i, p, o, i, p, p, p, i)
+#3
 TEB = data.frame(V1,V2,V3,V4,V5,V6,V7,V8)
+#4
+TEB
+#5
+dim(TEB)
+#6
 colnames(TEB) = c('Identificação', 'Estado Civil','Grau de Instrução', 'No. de filhos',
 'Salário','IdadeA', 'IdadeM', 'Região de Procedência')
-TEB
-table(V4)
-
-mean(V5)
-
-median(V5)
-
-sd(V5)
-
-var(V5)
-
-Salario1 = (V50.2) + V5
-Salario2 = V5 + 1.5
-Salario3 = V5 - 0.8
-Salario4 = V52
-Salario5 = V5/3
-
+#7
+attach(TEB)
+table(No. de filhos)
+#8
+mean(No. de filhos)
+median(No. de filhos)
+sd(No. de filhos)
+var(No. de filhos)
+#9
+Salario1 = (Salário*0.2)+ Salário
+#10
+Salario2 = Salário + 1.5
+#11
+Salario3 = Salário - 0.8
+#12
+Salario4 = Salário*2
+#13
+Salario5 = Salário/3
+#14
 mean(Salario1);mean(Salario2);mean(Salario3);mean(Salario4);mean(Salario5)
 
 median(Salario1);median(Salario2);median(Salario3);median(Salario4);median(Salario5)
@@ -47,4 +59,9 @@ median(Salario1);median(Salario2);median(Salario3);median(Salario4);median(Salar
 sd(Salario1);sd(Salario2);sd(Salario3);sd(Salario4);sd(Salario5)
 
 var(Salario1);var(Salario2);var(Salario3);var(Salario4);var(Salario5)
-
+#15
+SSSIIIIMMMM!!!!!!
+#16
+insalvavael
+                
+                ********************************************PARTE 2*****************************************************

@@ -64,4 +64,36 @@ SSSIIIIMMMM!!!!!!
 #16
 insalvavael
                 
-                ********************************************PARTE 2*****************************************************
+                ********************************************PARTE 2****************************************************  
+
+#17
+rm(list = ls())
+ #18
+tabela1 = read.csv('Tabela1.csv', header = T, sep = ';', dec = ',')
+#19
+colnames(tabela1) = c('Identificação','Estado Civil', 'Grau de Instrução', 'No. de Filhos',
+'Salário', 'IdadeA', 'IdadeM', 'Região de Procedência')
+#20
+Idade = c(IdadeM,IdadeA)
+
+Questão 21
+cbind(tabela1, Idade)
+
+Questão 22
+tabela1 = cbind(tabela1, Idade)[,-c(6,7)]
+tabela1
+
+Questão 23
+str(tabela1)
+
+Questão 24
+dim(tabela1)
+
+Questão 25
+list(ls())
+
+Questão 26
+write.csv(tabela1, file = 'Tabela1Nova.csv')
+
+Questão 27
+rm(list = ls())

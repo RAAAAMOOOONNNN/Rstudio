@@ -1,7 +1,8 @@
+                                                           LISTA 1                 
                 ********************************************PARTE 1*****************************************************
-#1
+#Questão 1
 rm(list=ls())
-#2
+#Questão 2
 V1 = 1:36
 s = "solteiro"
 k = "casado"
@@ -24,76 +25,100 @@ p = "capital"
 o = "outra"
 V8 = c(i, p, p, o, o, i, i, p, p, o, i, p, o, o, i, o, p, o, i, i, o, p, o, o,
 i, o, o, i, i, p, o, i, p, p, p, i)
-#3
+#Questão 3
 TEB = data.frame(V1,V2,V3,V4,V5,V6,V7,V8)
-#4
+#Questão 4
 TEB
-#5
+#Questão 5
 dim(TEB)
-#6
+#Questão 6
 colnames(TEB) = c('Identificação', 'Estado Civil','Grau de Instrução', 'No. de filhos',
 'Salário','IdadeA', 'IdadeM', 'Região de Procedência')
-#7
+#Questão 7
 attach(TEB)
-table(No. de filhos)
-#8
-mean(No. de filhos)
-median(No. de filhos)
-sd(No. de filhos)
-var(No. de filhos)
-#9
+table('No. de filhos')
+#Questão 8
+mean('No. de filhos')
+median('No. de filhos')
+sd('No. de filhos')
+var('No. de filhos')
+#Questão 9
 Salario1 = (Salário*0.2)+ Salário
-#10
+#Questão 10
 Salario2 = Salário + 1.5
-#11
+#Questão 11
 Salario3 = Salário - 0.8
-#12
+#Questão 12
 Salario4 = Salário*2
-#13
+#Questão 13
 Salario5 = Salário/3
-#14
+#Questão 14
 mean(Salario1);mean(Salario2);mean(Salario3);mean(Salario4);mean(Salario5)
-
 median(Salario1);median(Salario2);median(Salario3);median(Salario4);median(Salario5)
-
 sd(Salario1);sd(Salario2);sd(Salario3);sd(Salario4);sd(Salario5)
-
 var(Salario1);var(Salario2);var(Salario3);var(Salario4);var(Salario5)
-#15
+#Questão 15
 SSSIIIIMMMM!!!!!!
-#16
+#Questão 16
 insalvavael
                 
                 ********************************************PARTE 2****************************************************  
 
-#17
+#Questão 17
 rm(list = ls())
- #18
+ #Questão 18
 tabela1 = read.csv('Tabela1.csv', header = T, sep = ';', dec = ',')
-#19
+#Questão 19
 colnames(tabela1) = c('Identificação','Estado Civil', 'Grau de Instrução', 'No. de Filhos',
 'Salário', 'IdadeA', 'IdadeM', 'Região de Procedência')
-#20
+#Questão 20
 Idade = c(IdadeM,IdadeA)
-
-Questão 21
+#Questão 21
 cbind(tabela1, Idade)
-
-Questão 22
+#Questão 22
 tabela1 = cbind(tabela1, Idade)[,-c(6,7)]
 tabela1
-
-Questão 23
+#Questão 23
 str(tabela1)
-
-Questão 24
+#Questão 24
 dim(tabela1)
-
-Questão 25
+#Questão 25
 list(ls())
-
-Questão 26
+#Questão 26
 write.csv(tabela1, file = 'Tabela1Nova.csv')
-
-Questão 27
+#Questão 27
 rm(list = ls())
+               ********************************************PARTE 3****************************************************  
+ #Questão 28
+rm(list = ls())
+#Questão 29
+tabela2 = read.csv('Tabela2.csv', header = T, sep = '', dec = ',')
+#Questão 30a
+tabela2[c(12:32),]
+#Questão 30b
+tabela2[c(10:15),c(1,4)]
+#Questão 30c
+which(tabela2$sa >=16)
+#Questão 30d
+attach(tabela2)
+summary(sa); mean(sa); var(sa); sd(sa);(sd(sa)/mean(sa));
+boxplot(sa);
+hist(sa)
+#Questão 30e
+table(nf)
+#Questão 30f
+sort(c(ec,gi,rp), decreasing = F)
+#Questão 30g
+sort(ec); sort(gi,decreasing = T); sort(rp)
+#Questão 31
+x = tabela2[c(2,3,6:8,11,14:18,21,26,28,32,38,43,44,46,48,50),]
+res1 = data.frame(x)
+res1
+#Questão 32
+res2 = data.frame(tabela2[c(5,9,12,19,20,22,24,25,17,19:31,33,35,36),])
+res2
+Questão 33
+res3= data.frame(tabela2, 'grau de instrução', 'salário' , 'região de procedência')
+res3
+
+

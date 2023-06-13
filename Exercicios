@@ -28,7 +28,7 @@ i, o, o, i, i, p, o, i, p, p, p, i)
 #Questão 3
 TEB = data.frame(V1,V2,V3,V4,V5,V6,V7,V8)
 #Questão 4
-TEB
+str(TEB)
 #Questão 5
 dim(TEB)
 #Questão 6
@@ -36,12 +36,13 @@ colnames(TEB) = c('Identificação', 'Estado Civil','Grau de Instrução', 'No. 
 'Salário','IdadeA', 'IdadeM', 'Região de Procedência')
 #Questão 7
 attach(TEB)
-table('No. de filhos')
+table(TEB$'No. de filhos')
 #Questão 8
-mean('No. de filhos')
-median('No. de filhos')
-sd('No. de filhos')
-var('No. de filhos')
+detach(TEB)
+mean(TEB$'Salário')
+median(TEB$'Salário')
+sd(TEB$'Salário')
+var(TEB$'Salário')
 #Questão 9
 Salario1 = (Salário*0.2)+ Salário
 #Questão 10
